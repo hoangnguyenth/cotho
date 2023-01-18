@@ -1,19 +1,23 @@
 import React from 'react'
-import {Avatar, Box, Button, Card} from '@mui/material'
+import { Box, Button, TextField } from '@mui/material'
 
 const Home = () => {
     return (
         <Box>
             <Box sx={{display: "flex",
-            flexDirection: "row-reverse",
+            flexDirection: "row",
             height: "100px",
-            backgroundColor: "DodgerBlue",
-            alignItems: "center"
-            }}>
-                <Button variant='contained' size='large' sx={{height: "50px", m: "25px"}}>Sign in</Button>
+            border: '3px solid DodgerBlue',
+            alignItems: "center",
+            justifyContent: "right"
+            }}>                
+                <TextField label='Nhập tên thật'  variant='outlined' />
+                <TextField label='Nhập tên FaceBook'  variant='outlined' />
+                <TextField label='Nhập địa chỉ'  variant='outlined' />
+                <Button variant='contained' size='large' sx={{height: "50px", m: "25px"}}>Đăng kí</Button>
             </Box>
             <Box>
-                <Avatar src=''></Avatar>
+                
             </Box>
         </Box>
 )}
