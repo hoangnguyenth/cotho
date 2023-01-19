@@ -23,8 +23,8 @@ const Home = () => {
             </Box>
             <Box sx={{display: "flex", flexDirection: "row"}}>
                 {products.map((item, index) => <Card key={index} sx={{alignItems: "center", justifyContent: "center", border: "1.5px dashed black", margin: 5, width: 200}} >
-                    <Box sx={{width: 100, height: 100}}>
-                        <img src={item.img}></img>
+                    <Box sx={{display: "flex", flexDirection: 'row', width: "100px", height: "100px"}}>
+                        <img src={item.img} />
                     </Box>
                     <Typography variant="h5">{item.name}</Typography>
                     <Typography variant="h6">{item.price}k/hộp</Typography>
