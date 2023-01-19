@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Button, TextField } from '@mui/material'
+import { Box, Button, ImageList, TextField } from '@mui/material'
 
 const Home = () => {
     return (
@@ -10,7 +10,8 @@ const Home = () => {
             border: '3px solid DodgerBlue',
             alignItems: "center",
             justifyContent: "right"
-            }}>                
+            }}>
+                <ImageList></ImageList>
                 <TextField label='Nhập tên thật'  variant='outlined' />
                 <TextField label='Nhập tên FaceBook'  variant='outlined' />
                 <TextField label='Nhập địa chỉ'  variant='outlined' />
