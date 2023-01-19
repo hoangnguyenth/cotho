@@ -17,7 +17,7 @@ const Home = () => {
                     <img src={logo} />
                 </Box>
                 <TextField label='Nhập tên thật'  variant='outlined' required />
-                <TextField label='Nhập tên FaceBook'  variant='outlined' required/>
+                <TextField label='Nhập số điện thoại'  variant='outlined' required/>
                 <TextField label='Nhập địa chỉ'  variant='outlined' required/>
                 <Button variant='contained' size='large' sx={{height: "50px", m: "25px"}}>Đăng kí</Button>
             </Box>
