@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Button, TextField, Card, Typography} from '@mui/material'
 import products from '../images/products'
-import logo from './logo.png'
+import logo from '../images/logo.png'
 
 const Home = () => {
     return (
@@ -23,7 +23,7 @@ const Home = () => {
             </Box>
             <Box sx={{display: "flex", flexDirection: "row"}}>
                 {products.map((item, index) => <Card key={index} sx={{alignItems: "center", justifyContent: "center", border: "1.5px dashed black", margin: 5, width: 200}} >
-                    <Box sx={{display: "flex", flexDirection: 'row', width: "100px", height: "100px"}}>
+                    <Box sx={{display: "flex", flexDirection: 'row', width: "100%", height: "100px"}}>
                         <img src={item.img} />
                     </Box>
                     <Typography variant="h5">{item.name}</Typography>
